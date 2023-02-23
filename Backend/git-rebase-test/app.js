@@ -38,6 +38,8 @@ app.listen(PORT, () => {
     .then(() => {
       console.log("DB Connection has been initialized")
     })
-
+    .catch(() => {
+      console.log("DB Connection has been failed")
+    })
   console.log(`Listening to request on localhost:${PORT}`);
 })
